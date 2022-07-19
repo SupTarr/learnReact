@@ -9,10 +9,12 @@ import React, { Component } from "react";
 // Class Component
 export default class Hello extends Component {
   render() {
+    // Destructuring props
+    const { name, nickName } = this.props;
     return (
       <div id="hello" className="hello">
         <h1>
-          Welcome {this.props.name} a.k.a {this.props.nickName}
+          Welcome {name} a.k.a {nickName}
         </h1>
       </div>
     );
